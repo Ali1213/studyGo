@@ -11,6 +11,12 @@ func main(){
 
 func average(a []float64) (r float64){
 	var total float64
+
+	if len(a) == 0 {
+		r = 0
+		return
+	}
+
 	for _, num := range(a){
 		total += num
 	}

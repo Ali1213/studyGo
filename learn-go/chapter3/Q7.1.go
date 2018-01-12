@@ -9,11 +9,9 @@ func main(){
 	fmt.Println(c,d)
 }
 
-func rightPos(a,b  int) (c,d int){
+func rightPos(a,b  int) (int, int){
 	if a>b {
-		c,d = b,a
-	}else{
-		c,d = a,b
+		return b,a
 	}
-	return
+	return a,b
 }
