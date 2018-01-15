@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main(){
-	fmt.Println(fibner(2))
-	fmt.Println(fibner(5))
+	fmt.Println(fibonacci(2))
+	fmt.Println(fibonacci(5))
 }
 
-func fibner(n int)(int){
+func fibonacci(n int)(int){
 	totals := make([]int,2)
 	totals[0] = 1
 	totals[1] = 1
