@@ -3,16 +3,17 @@ package main
 import "fmt"
 
 func main(){
-
+	fmt.Println(fibner(2))
+	fmt.Println(fibner(5))
 }
 
 func fibner(n int)(int){
-	totals := make([]int{1,1})
+	totals := make([]int,2)
+	totals[0] = 1
+	totals[1] = 1
 
-	if n < len(totals) {
-		totals = append(totals,totals(len(totals)-1)+totals(len(totals)-2))
+	for n > len(totals) {
+		totals = append(totals,totals[len(totals)-1]+totals[len(totals)-2])
 	}
-	
-	return totals(len(totals)-1)
-
+	return totals[len(totals)-1]
 }
